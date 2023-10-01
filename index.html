@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Code!!! -->
+</head>
+
+<body onload="">
+    <!-- Scroll in section 
+    <div id="scrollin" class="bg-cream">
+        <div class="inside-scrollin">
+            <img class="piece-scrollin" src="assets/logopurple.png" onclick="document.location='#home'"></img>
+            <div style="padding-top: 90vh; opacity: 0; animation: pulse 3s infinite; animation-delay: 2s;">
+                <p>Scroll down to see more!</p>
+            </div>
+        </div>
+        <div class="homepagething"></div>
+        <div class="inside-scrollin ">
+            <div class="v-flex">
+                <div class="h-flex" style="padding-top: 10vh">
+                    <a class="quest-text" >How can I join slca?</a>
+                    <a class="quest-text">What are some upcoming events?</a>
+                    <a class="quest-text" onclick="createQuest('Donate', ['#about', '#charity', '#donate'])">How can I donate?</a>
+                    <a class="quest-text" href="#home">More...</a>
+                    <span class="try-quest">← Click to start a quest!</span>
+                </div>
+                
+                <div class="h-flex " style="justify-content: center; align-items: center;" href="#home">
+                    <h1 class="huge-logo-text">Using Chess to make a <div><div class="bright-color">difference.</div></h1>
+                    <image class="piece-slam" src="assets/logosemiblack.png"></image>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div id="loadingindicator">
+        <div id="loadingspinner">
+            <img src="assets/logocream.png" style="width: 100%; height: auto;"></img>
+        </div>
+        <p id="loadingtext">Getting things ready...</p>
+    </div>
+
+
+    <div id="everythingimportant" style="display:none;">
+        <!-- Home section -->
+
+        <div id="home">
+            <div class="nav-bar">
+                <a href="#about">ABOUT</a>
+                <a href="#charity">INITIATIVES</a>
+                <a href="#tournaments">EVENTS</a>
+                <a href="#donate">DONATE</a>
+            </div>
+
+            <!--<div class="scrolling-info-bar">
+            Breaking News! SLCA is the best thing in the whole wide world!
+        </div>-->
+            <!-- The home section is built like a chess board with our brand colors-->
+            <!-- It has three rows (2 have info, one is extra) and four columns -->
+            <div class="v-flex">
+                <!-- Top column -->
+                <div class="h-flex">
+                    <a class="home-card bg-purple" href="#home" style="cursor:default;">
+                        <image src="assets/logocream.png" class="logo"></image>
+                    </a>
+
+                    <a class="top-row block1 home-card" href="workinprogress.html">
+                        <button class="text-container text"><span></span>I AM A MEMBER</button>
+                        <img src="assets/pawn.png" class="bishops image-container" alt="n/a">
+                    </a>
+
+                    <a class="home-card bg-purple-slide" href="#about">
+                        <div class="bg-purple-img1">
+
+                        </div>
+                        <div class="home-card-container"
+                            style="position: absolute; top: 110vh; left: calc(2 * 25vw + (25vw * 0.1)); z-index: 2000; pointer-events: none;">
+                            <p class="tiny-text">OUR IMPACT</p>
+                            <h1 class="giant-text">Making a difference through Chess.</h1>
+                        </div>
+                    </a>
+
+                    <div class="home-card bg-cream bg-cream-hover">
+                        <iframe class="chessboard" src="https://livetactics.chessbase.com"></iframe>
+                    </div>
+                </div>
+                <!-- Bottom column -->
+                <div class="h-flex">
+                    <a class="top-row block1 home-card" href="workinprogress.html">
+                        <button class="text-container text"><span></span>I AM A SPONSOR</button>
+                        <img src="assets/bishop.png" class="bishops image-container" alt="n/a">
+                    </a>
+
+                    <a class="home-card bg-purple-slide" href="#charity">
+                        <div class="bg-purple-img2">
+
+                        </div>
+                        <div class="home-card-container"
+                            style="position: absolute; top: calc(110vh + 45vh - 1.5vh); left: calc(1 * 25vw + (25vw * 0.1)); z-index: 2000; pointer-events: none;">
+                            <p class="tiny-text">CHARITY</p>
+                            <h1 class="giant-text">Breaking barriers. Building the future.</h1>
+                        </div>
+                    </a>
+
+                    <a class="top-row block1 home-card" href="workinprogress.html">
+                        <button class="text-container text"><span></span>I AM AN ALUMNI</button>
+                        <img src="assets/rook.png" class="bishops image-container" alt="n/a">
+                    </a>
+
+                    <a class="home-card bg-purple-slide" href="#tournaments">
+                        <div class="home-card-container">
+                            <p class="tiny-text">EVENTS</p>
+                            <h1 class="giant-text">Go Big or <br>Go Home<br> at the Texas Tournament.</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticker-container">
+                <div class="ticker-wrapper">
+                    <div class="ticker-transition">
+                        <div class="ticker-item">Breaking News: SLCA is literally the best thing to ever happen!</div>
+                        <div class="ticker-item">Wacky Wednesday is awesome!</div>
+                        <div class="ticker-item">Click around the website to find more about the Student Led Chess
+                            Association!</div>
+
+                        <div class="ticker-item">Student Led Chess Association is a registered nonprofit corporation
+                            (501(c)(3) tax-exemption).
+                            All donations are tax-deductible.
+                            EIN: 88-2514351</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div id="about" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#home" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">ABOUT US</h1>
+
+                    <div class="h-flex">
+                        <div class="section section-bg" style="margin-right: 5vw; width: 60vw;">
+                            <div style="padding: 0;" class="innerTourn v-flex">
+                                <h1 style="innerTournHeader" style="font-size: 0.6vw;">Using Chess to make a
+                                    <em>Difference</em>.
+                                </h1>
+                                <p style="font-size: 1.2vw;">
+                                    Student Led Chess Association (SLCA) is a non-profit 501(c)(3) organization
+                                    committed to
+                                    providing chess
+                                    education to underdeveloped communities that lack exposure to the sport. Chess is
+                                    beneficial for developing necessary skills such as memory, focus, and
+                                    problem-solving.
+                                </p>
+                                <p style="font-size: 1.2vw;">SLCA's curriculum emphasizes chess education from a
+                                    student's
+                                    perspective. We organize
+                                    charity tournaments and events to raise awareness and encourage a love of chess.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section section-bg v-flex" style="background-color: #6f65b8;
+    border-radius: 10px; box-shadow:none;">
+                            <div class="section section-bg" style="margin: 3vw; width: 85%; margin-bottom: 1.5vw;">
+                                <div style="margin-left: 2vw; margin-right: 2vw;">
+                                    <h2>Meet the 2023-24 Executive Team!</h2>
+                                    <p>The Executive Team is comprised of some of
+                                        the awesomest, hardest-working people on the planet. You should totally check
+                                        them
+                                        out!</p>
+                                    <a style="color: #8076C8;" href="#executiveteam"><button class="learn-more">LEARN
+                                            MORE
+                                            →</button></a>
+                                </div>
+                            </div>
+                            <div class="section section-bg" style="margin: 3vw; width: 85%; margin-top: 1.5vw;">
+                                <div style="margin-left: 2vw; margin-right: 2vw;">
+                                    <h2>Meet the Board of Directors!</h2>
+                                    <p>The Board of Directors work diligently to constantly expand and redefine SLCA.
+                                        <a>Who
+                                            wouldn't want to meet them?</a>
+                                    </p>
+                                    <a style="color: #8076C8;" href="#boardofdirectors"><button class="learn-more">LEARN
+                                            MORE →</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="executiveteam" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#about" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">EXECUTIVE TEAM</h1>
+
+                    <div class="about-section" style="height: 72vh;">
+                        <div class="h-flex space-around" style="width: 95%;">
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Suden Prashar</h3>
+                                        <p>Co-Founder & Co-Executive President</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Mahith Ravulapati</h3>
+                                        <p>Co-Founder & Co-Executive President</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Polina Annakova</h3>
+                                        <p>Vice President of Social Media</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-flex space-around" style="width: 95%;">
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Aniruth Ananthanarayanan</h3>
+                                        <p>Vice President of Technology</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Maya Behura</h3>
+                                        <p>Co-Vice President of Leagues</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Asha Kumar</h3>
+                                        <p>Vice President of Finances</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-flex space-around" style="width: 95%;">
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Lacey Rael</h3>
+                                        <p>Co-Vice President of Leagues</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Satya Maddirala</h3>
+                                        <p>Vice President of Events</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-inner section-bg" style="width: 35vw; height: 15vh;">
+                                <div class="member-card">
+                                    <img class='pfp' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Anish Hariharan</h3>
+                                        <p>Vice President of Operations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="boardofdirectors" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#about" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">BOARD OF DIRECTORS</h1>
+
+                    <div class="about-section" style="height: 65vh; justify-content: space-evenly;">
+                        <div class="h-flex space-between" style="width: 90%;">
+                            <div class="about-inner section-bg" style="width: 35vw; height: 30vh; margin-right: 5%;">
+                                <div class="member-card">
+                                    <img class='pfp2' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Arjun Iyer</h3>
+                                        <p>Chairman of the Board</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--</div>
+                    <div class="h-flex space-between" style="width: 90%;">-->
+                            <div class="about-inner section-bg" style="width: 35vw; height: 30vh;">
+                                <div class="member-card">
+                                    <img class='pfp2' src='assets/blankpfp.webp'>
+                                    <div class="v-flex just-center" style="height:100%">
+                                        <h3>Jatin Potnuri</h3>
+                                        <p>Member of the Board</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charity section -->
+        <div id="charity" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#home" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">INITIATIVES</h1>
+                    <div class="container h-flex space-between" style="padding: 0;">
+                        <div class="section" style="padding: 0; margin-left: -2%; margin-right: 2%;">
+                            <img class="section-img" src="assets/talking.webp" alt="Tournament Image"
+                                style="padding: 0;">
+                        </div>
+                        <div style="padding: 0;" class="tournText section section-bg">
+                            <div style="padding: 0;" class="innerTourn v-flex">
+                                <h2 style="innerTournHeader" style="font-size: 0.8vw;">C.A.S.T.L.E.<br><em>Chess Access
+                                        and
+                                        Skill Training for Low-income Education</em></h2>
+                                <p style="font-size: 1.2vw;">
+                                    “<em>Only a life lived for others is a life
+                                        worthwhile.</em>”<br>&nbsp;&nbsp;&nbsp;&nbsp; - <b>Albert Einsten</b>
+                                </p>
+
+                                <p style="font-size: 1.2vw;">
+                                    SLCA aims to introduce the <b>game of chess</b> to marginalized communities,
+                                    providing
+                                    them
+                                    with a
+                                    unique opportunity to develop <b>essential cognitive skills</b> and <b>critical
+                                        thinking
+                                        abilities</b>.
+                                </p>
+                                <p style="font-size: 1.2vw;">Our workshops serve as a platform for nurturing talent and
+                                    fostering a sense of
+                                    <b>belonging</b>
+                                    and <b>achievement</b> among participants!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Donate section -->
+        <div id="donate" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#home" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">DONATE</h1>
+                    <div class="container h-flex space-between" style="padding: 0;">
+                        <div style="padding: 0;" class="tournText section section-bg">
+                            <div style="padding: 0;" class="innerTourn v-flex">
+                                <h1 style="innerTournHeader" style="font-size: 0.8vw;">Help SLCA Help You!</h1>
+                                <p>
+                                    SLCA is always looking to make an impact and better the lives of people around us in
+                                    our
+                                    communities, as well as
+                                    the well-being of other through our platform and chess related events
+                                </p>
+
+                                <p>
+                                    In order to help us acheive our goals, any form or amount of donation will be
+                                    greatly
+                                    appreciated!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section" style="width:37vw;"">
+                        <script src=" https://donorbox.org/widget.js" paypalExpress="false">
+                        </script><iframe src="https://donorbox.org/embed/student-led-chess-association"
+                                name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless"
+                                frameborder="0" scrolling="no" height="900px" width="100%"
+                                style="max-width: 500px; min-width: 250px; max-height:none!important"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tournament section -->
+        <div id="tournaments" class="bg-purple section-div">
+            <div class="section-container">
+                <div class="v-flex">
+                    <a href="#home" class="go-back">← GO BACK</a>
+                    <h1 class="section-title">EVENTS</h1>
+                    <div class="container h-flex space-between">
+                        <div style="padding: 0;" class="tournText section section-bg">
+                            <div style="padding: 0;" class="innerTourn v-flex">
+                                <h1 style="font-size: 2.4vw;"><em>BREAKING NEWS!<br>SLCA
+                                        Tournaments<br> Make Life Awesome</em></h1>
+                                <p style="font-size: 1.2vw;">
+                                    SLCA Frequently holds charity tournaments, both in person and online! Tournaments
+                                    are a
+                                    fun way
+                                    to get to know other players and test your skills, while giving back to your
+                                    community.
+                                </p>
+
+                                <p style="font-size: 1.2vw;">
+                                    However, not all tournaments are serious or charity-oriented. SLCA holds a weekly
+                                    online
+                                    tournament called
+                                    <b>Wacky Wednesday</b> where players compete in a variety of chess gamemodes. <br>
+                                </p>
+                                <p style="font-size: 1.2vw;">
+                                    Check
+                                    back here for updates on upcoming tournaments!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <img class="section-img" src="assets/tournament.png" alt="Tournament Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
