@@ -166,20 +166,6 @@ function resetAnimation() {
 
 //setInterval(resetAnimation, 10000)
 
-switch (screen.orientation.type) {
-    case "landscape-primary":
-        console.log("That looks good.");
-        break;
-    case "landscape-secondary":
-    case "portrait-secondary":
-    case "portrait-primary":
-        console.log("oop you should rotate your screen");
-
-        break;
-    default:
-        console.log("The orientation API isn't supported in this browser :(");
-}
-
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector(
@@ -191,6 +177,7 @@ document.onreadystatechange = function() {
         setTimeout(() => {
             location.hash = "#home";
             setTimeout(() => {
+                checklandscape();
                 document.querySelector(
                     "#everythingimportant").style.display = 'block';
                 console.log("scrolling")
@@ -203,3 +190,22 @@ document.onreadystatechange = function() {
         }, 0);
     }
 };
+
+function checklandscape() {
+    let alerted = false;
+    while (true) {
+        switch (screen.orientation.type) {
+            case "landscape-primary":
+                console.log("That looks good.");
+                return;
+            case "landscape-secondary":
+            case "portrait-secondary":
+            case "portrait-primary":
+                if (!alerted) {
+                    alert("Please turn your phone into landscape mode for the best experience as we continue the development of our mobile UI. Thank you for visiting the SLCA website!");
+                    alerted = true;
+                }
+                return;
+        }
+    }
+}

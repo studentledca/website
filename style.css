@@ -9,6 +9,8 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Brand colors and info */
@@ -828,7 +830,8 @@ a {
     line-height: 1;
     /*background-image: url("assets/pawn.png");
     background-size: contain;*/
-    background-color: #8076C8;;
+    background-color: #8076C8;
+    ;
     border-radius: 1vw;
     position: absolute;
     top: calc(50vh - 5vw - 5vh);
@@ -849,4 +852,9 @@ a {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.landscape-force {
+    transform: rotate(90deg);
+    transform-origin: bottom left;
 }
