@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <title>website</title>
+        <link href="./css/loader.css" rel="stylesheet" type="text/css" />
+        <link href="./css/misc.css" rel="stylesheet" type="text/css" />
+        <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id='loader'>
+            <p>loading contact.html...</p>
+        </div>
+        <div id="content" style="display: none;">
+            <nav id="nav-container">
+                <nav id="nav-container">
+                    <div id="navbar" class="white-txt">
+                        <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
+                        <a href="index.html" class="nav-a">Home</a>
+                        <span>|</span>
+                        <a href="about.html" class="nav-a">About Us</a>
+                        <span>|</span>
+                        <a href="branches.html" class="nav-a">Branches</a>
+                        <span>|</span>
+                        <a href="shop.html" class="nav-a">Shop</a>
+                        <span>|</span>
+                        <a href="events.html" class="nav-a">Events</a>
+                        <span>|</span>
+                        <a href="contact.html" class="nav-a">Contact</a>
+                    </div>
+
+                    <div id="mobile-navbar">
+                        <a href="shop.html" class="underline-on-hover">Shop</a>
+                        <a href="about.html" class="underline-on-hover">About</a>
+                        <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+
+                        <a href="events.html" class="underline-on-hover">Events</a>
+                        <a href="contact.html" class="underline-on-hover">Contact</a>
+                    </div>
+                </nav>
+
+
+                <div id="our-team"
+                    style="height: 100vh; display: flex; align-items: center; padding-bottom: 0; padding-top: 0; margin-top: 0; margin-bottom: 0;">
+                    <h1>Contact us at <a href="mailto:contact@studentledca.org"
+                            class="underline-on-hover">contact@studentledca.org</a></h1>
+                </div>
+
+
+
+                <footer>
+                    We are a 501(c)(3) organization. Donations are tax exemptable.
+                </footer>
+        </div>
+
+        <script src='darkvlight.js'></script>
+        <script src="random.min.js"></script>
+        <script src='loader.js'></script>
+    </body>
+
+</html>

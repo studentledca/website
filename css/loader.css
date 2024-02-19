@@ -1,0 +1,38 @@
+#content {
+  opacity: 0%;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Courier New', Courier, monospace;
+  /*font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+
+}
+
+#loader p {
+  padding: 3vh;
+  border: var(--yellow) solid 2px;
+}
+
+.fade-in-after-load {
+  animation: fade-in 2s ease-in forwards;
+}
+
+.fade-in-after-load-fast {
+  animation: fade-in 0.8s ease-in forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+    background-image: none;
+  }
+}
