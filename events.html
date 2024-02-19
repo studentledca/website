@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-        <title>website</title>
-        <link href="./css/loader.css" rel="stylesheet" type="text/css" />
-        <link href="./css/misc.css" rel="stylesheet" type="text/css" />
-        <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
-        <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>SLCA</title>
+    <link rel="icon" type="image/x-icon" href="/public/logolight.png">
+    <link href="./css/loader.css" rel="stylesheet" type="text/css" />
+    <link href="./css/misc.css" rel="stylesheet" type="text/css" />
+    <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
+    <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+</head>
 
-    <body>
-        <div id='loader'>
-            <p>loading events.html...</p>
-        </div>
-        <div id="content" style="display: none;">
-            <nav id="nav-container">
-                <div id="navbar" class="white-txt">
-                    <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
-                    <a href="index.html" class="nav-a">Home</a>
-                    <span>|</span>
-                    <a href="about.html" class="nav-a">About Us</a>
-                    <span>|</span>
-                    <a href="branches.html" class="nav-a">Branches</a>
-                    <span>|</span>
-                    <a href="shop.html" class="nav-a">Shop</a>
-                    <span>|</span>
-                    <a href="events.html" class="nav-a">Events</a>
-                    <span>|</span>
-                    <a href="contact.html" class="nav-a">Contact</a>
-                </div>
-
-                <div id="mobile-navbar">
-                    <a href="shop.html" class="underline-on-hover">Shop</a>
-                    <a href="about.html" class="underline-on-hover">About</a>
-                    <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
-
-                    <a href="events.html" class="underline-on-hover">Events</a>
-                    <a href="contact.html" class="underline-on-hover">Contact</a>
-                </div>
-            </nav>
-
-
-            <div id="our-team">
-                <h1>Upcoming Events</h1>
+<body>
+    <div id='loader'>
+        <p>loading events.html...</p>
+    </div>
+    <div id="content" style="display: none;">
+        <nav id="nav-container">
+            <div id="navbar" class="white-txt">
+                <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
+                <a href="index.html" class="nav-a">Home</a>
+                <span>|</span>
+                <a href="about.html" class="nav-a">About Us</a>
+                <span>|</span>
+                <a href="branches.html" class="nav-a">Branches</a>
+                <span>|</span>
+                <a href="shop.html" class="nav-a">Shop</a>
+                <span>|</span>
+                <a href="events.html" class="nav-a">Events</a>
+                <span>|</span>
+                <a href="contact.html" class="nav-a">Contact</a>
             </div>
 
-            <section class="event-container">
-                <hr class="solid skiphr">
-                <div class="event special-event">
-                    <img src='./tournaments/colorado_state.jpg'></img>
-                    <div>
-                        <h1 class="underline-on-hover">Colorado State Tournament</h1>
-                        <p>A 2-day state chess tournament where any Colorado High School student can participate.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <div id="mobile-navbar">
+                <a href="shop.html" class="underline-on-hover">Shop</a>
+                <a href="about.html" class="underline-on-hover">About</a>
+                <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+
+                <a href="events.html" class="underline-on-hover">Events</a>
+                <a href="contact.html" class="underline-on-hover">Contact</a>
+            </div>
+        </nav>
 
 
-
-            <footer>
-                We are a 501(c)(3) organization. Donations are tax exemptable.
-            </footer>
+        <div id="our-team">
+            <h1>Upcoming Events</h1>
         </div>
 
-        <script src='darkvlight.js'></script>
-        <script src="random.min.js"></script>
-        <script src='loader.js'></script>
-    </body>
+        <section class="event-container">
+            <hr class="solid skiphr">
+            <div class="event special-event">
+                <img src='./tournaments/colorado_state.jpg'></img>
+                <div>
+                    <h1 class="underline-on-hover">Colorado State Tournament</h1>
+                    <p>A 2-day state chess tournament where any Colorado High School student can participate.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            We are a 501(c)(3) organization. Donations are tax exemptable.
+        </footer>
+    </div>
+
+    <script src='darkvlight.js'></script>
+    <script src="random.min.js"></script>
+    <script src='loader.js'></script>
+</body>
 
 </html>
