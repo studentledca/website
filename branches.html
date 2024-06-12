@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,6 +11,32 @@
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
     <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        .bio-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .bio {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .bio img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .bio h3 {
+            margin: 10px 0 5px;
+        }
+        .bio p {
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,40 +45,111 @@
     </div>
     <div id="content" style="display: none;">
         <nav id="nav-container">
-            <nav id="nav-container">
-                <div id="navbar" class="white-txt">
-                    <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
-                    <a href="index.html" class="nav-a">Home</a>
-                    <span>|</span>
-                    <a href="about.html" class="nav-a">About Us</a>
-                    <span>|</span>
-                    <a href="branches.html" class="nav-a">Branches</a>
-                    <span>|</span>
-                    <a href="shop.html" class="nav-a">Shop</a>
-                    <span>|</span>
-                    <a href="events.html" class="nav-a">Events</a>
-                    <span>|</span>
-                    <a href="contact.html" class="nav-a">Contact</a>
-                </div>
-
-                <div id="mobile-navbar">
-                    <a href="shop.html" class="underline-on-hover">Shop</a>
-                    <a href="about.html" class="underline-on-hover">About</a>
-                    <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
-
-                    <a href="events.html" class="underline-on-hover">Events</a>
-                    <a href="contact.html" class="underline-on-hover">Contact</a>
-                </div>
-            </nav>
-
-
-            <div id="our-team">
-                <h1>Branches</h1>
+            <div id="navbar" class="white-txt">
+                <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
+                <a href="index.html" class="nav-a">Home</a>
+                <span>|</span>
+                <a href="about.html" class="nav-a">About Us</a>
+                <span>|</span>
+                <a href="branches.html" class="nav-a">Branches</a>
+                <span>|</span>
+                <a href="shop.html" class="nav-a">Shop</a>
+                <span>|</span>
+                <a href="events.html" class="nav-a">Events</a>
+                <span>|</span>
+                <a href="contact.html" class="nav-a">Contact</a>
             </div>
 
-            <footer>
-                We are a 501(c)(3) organization. Donations are tax exemptable.
-            </footer>
+            <div id="mobile-navbar">
+                <a href="shop.html" class="underline-on-hover">Shop</a>
+                <a href="about.html" class="underline-on-hover">About</a>
+                <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+                <a href="events.html" class="underline-on-hover">Events</a>
+                <a href="contact.html" class="underline-on-hover">Contact</a>
+            </div>
+        </nav>
+
+        <div id="our-team">
+            <h1>Branches</h1>
+            <div class="bio-section">
+                <!-- Start of Mini Bio Sections -->
+                <div class="bio">
+                    <img src="path/to/california.jpg" alt="California">
+                    <h3>California</h3>
+                    <p>Short bio about California branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/washington.jpg" alt="Washington">
+                    <h3>Washington</h3>
+                    <p>Short bio about Washington branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/utah.jpg" alt="Utah">
+                    <h3>Utah</h3>
+                    <p>Short bio about Utah branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/texas.jpg" alt="Texas">
+                    <h3>Texas</h3>
+                    <p>Short bio about Texas branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/colorado.jpg" alt="Colorado">
+                    <h3>Colorado</h3>
+                    <p>Short bio about Colorado branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/ontario.jpg" alt="Ontario">
+                    <h3>Ontario</h3>
+                    <p>Short bio about Ontario branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/minnesota.jpg" alt="Minnesota">
+                    <h3>Minnesota</h3>
+                    <p>Short bio about Minnesota branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/georgia.jpg" alt="Georgia">
+                    <h3>Georgia</h3>
+                    <p>Short bio about Georgia branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/florida.jpg" alt="Florida">
+                    <h3>Florida</h3>
+                    <p>Short bio about Florida branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/north-carolina.jpg" alt="North Carolina">
+                    <h3>North Carolina</h3>
+                    <p>Short bio about North Carolina branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/new-york.jpg" alt="New York">
+                    <h3>New York</h3>
+                    <p>Short bio about New York branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/maryland.jpg" alt="Maryland">
+                    <h3>Maryland</h3>
+                    <p>Short bio about Maryland branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/virginia.jpg" alt="Virginia">
+                    <h3>Virginia</h3>
+                    <p>Short bio about Virginia branch...</p>
+                </div>
+                <div class="bio">
+                    <img src="path/to/massachusetts.jpg" alt="Massachusetts">
+                    <h3>Massachusetts</h3>
+                    <p>Short bio about Massachusetts branch...</p>
+                </div>
+                <!-- End of Mini Bio Sections -->
+            </div>
+        </div>
+
+        <footer>
+            We are a 501(c)(3) organization. Donations are tax-exempt.
+        </footer>
     </div>
 
     <script src='darkvlight.js'></script>
