@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -12,29 +12,44 @@
     <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
     <style>
-        .bio-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
+        .branch-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
         }
-        .bio {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
+
+        .branch-list li {
             background-color: #fff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .bio img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
+
+        .branch-list li .branch-info {
+            flex-grow: 1;
         }
-        .bio h3 {
-            margin: 10px 0 5px;
+
+        .branch-list li .branch-info h3 {
+            margin: 0;
+            font-size: 18px;
         }
-        .bio p {
+
+        .branch-list li .branch-info p {
+            margin: 0;
             font-size: 14px;
+            color: #666;
+        }
+
+        #our-team {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -71,90 +86,108 @@
 
         <div id="our-team">
             <h1>Branches</h1>
-            <div class="bio-section">
-                <!-- Start of Mini Bio Sections -->
-                <div class="bio">
-                    <img src="path/to/california.jpg" alt="California">
-                    <h3>California</h3>
-                    <p>Short bio about California branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/washington.jpg" alt="Washington">
-                    <h3>Washington</h3>
-                    <p>Short bio about Washington branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/utah.jpg" alt="Utah">
-                    <h3>Utah</h3>
-                    <p>Short bio about Utah branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/texas.jpg" alt="Texas">
-                    <h3>Texas</h3>
-                    <p>Short bio about Texas branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/colorado.jpg" alt="Colorado">
-                    <h3>Colorado</h3>
-                    <p>Short bio about Colorado branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/ontario.jpg" alt="Ontario">
-                    <h3>Ontario</h3>
-                    <p>Short bio about Ontario branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/minnesota.jpg" alt="Minnesota">
-                    <h3>Minnesota</h3>
-                    <p>Short bio about Minnesota branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/georgia.jpg" alt="Georgia">
-                    <h3>Georgia</h3>
-                    <p>Short bio about Georgia branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/florida.jpg" alt="Florida">
-                    <h3>Florida</h3>
-                    <p>Short bio about Florida branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/north-carolina.jpg" alt="North Carolina">
-                    <h3>North Carolina</h3>
-                    <p>Short bio about North Carolina branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/new-york.jpg" alt="New York">
-                    <h3>New York</h3>
-                    <p>Short bio about New York branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/maryland.jpg" alt="Maryland">
-                    <h3>Maryland</h3>
-                    <p>Short bio about Maryland branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/virginia.jpg" alt="Virginia">
-                    <h3>Virginia</h3>
-                    <p>Short bio about Virginia branch...</p>
-                </div>
-                <div class="bio">
-                    <img src="path/to/massachusetts.jpg" alt="Massachusetts">
-                    <h3>Massachusetts</h3>
-                    <p>Short bio about Massachusetts branch...</p>
-                </div>
-                <!-- End of Mini Bio Sections -->
-            </div>
         </div>
 
+        <ul class="branch-list">
+            <li>
+                <div class="branch-info">
+                    <h3>California</h3>
+                    <p>Details about the California branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Colorado</h3>
+                    <p>Details about the Colorado branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Florida</h3>
+                    <p>Details about the Florida branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Georgia</h3>
+                    <p>Details about the Georgia branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Massachusetts</h3>
+                    <p>Details about the Massachusetts branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Maryland</h3>
+                    <p>Details about the Maryland branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Minnesota</h3>
+                    <p>Details about the Minnesota branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>New York</h3>
+                    <p>Details about the New York branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>North Carolina</h3>
+                    <p>Details about the North Carolina branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Ontario</h3>
+                    <p>Details about the Ontario branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Texas</h3>
+                    <p>Details about the Texas branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Utah</h3>
+                    <p>Details about the Utah branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Virginia</h3>
+                    <p>Details about the Virginia branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Washington</h3>
+                    <p>Details about the Washington branch.</p>
+                </div>
+            </li>
+        </ul>
+
         <footer>
-            We are a 501(c)(3) organization. Donations are tax-exempt.
+            <p>We are a 501(c)(3) organization. Donations are tax exemptable.</p>
         </footer>
     </div>
 
-    <script src='darkvlight.js'></script>
-    <script src="random.min.js"></script>
-    <script src='loader.js'></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var loader = document.getElementById('loader');
+            var content = document.getElementById('content');
+            loader.style.display = 'none';
+            content.style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>
