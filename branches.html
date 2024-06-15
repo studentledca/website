@@ -11,6 +11,58 @@
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
     <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        .branch-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px auto;
+            max-width: 800px;
+            font-size: 14px;
+        }
+
+        .branch-list li {
+            background-color: #fff;
+            padding: 8px;
+            margin: 4px 0;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .branch-list li .branch-info {
+            flex-grow: 1;
+        }
+
+        .branch-list li .branch-info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .branch-list li .branch-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        #our-team {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #subheading {
+            text-align: center;
+            margin: 10px auto;
+            max-width: 800px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,40 +71,128 @@
     </div>
     <div id="content" style="display: none;">
         <nav id="nav-container">
-            <nav id="nav-container">
-                <div id="navbar" class="white-txt">
-                    <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
-                    <a href="index.html" class="nav-a">Home</a>
-                    <span>|</span>
-                    <a href="about.html" class="nav-a">About Us</a>
-                    <span>|</span>
-                    <a href="branches.html" class="nav-a">Branches</a>
-                    <span>|</span>
-                    <a href="shop.html" class="nav-a">Shop</a>
-                    <span>|</span>
-                    <a href="events.html" class="nav-a">Events</a>
-                    <span>|</span>
-                    <a href="contact.html" class="nav-a">Contact</a>
-                </div>
-
-                <div id="mobile-navbar">
-                    <a href="shop.html" class="underline-on-hover">Shop</a>
-                    <a href="about.html" class="underline-on-hover">About</a>
-                    <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
-
-                    <a href="events.html" class="underline-on-hover">Events</a>
-                    <a href="contact.html" class="underline-on-hover">Contact</a>
-                </div>
-            </nav>
-
-
-            <div id="our-team">
-                <h1>Branches</h1>
+            <div id="navbar" class="white-txt">
+                <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
+                <a href="index.html" class="nav-a">Home</a>
+                <span>|</span>
+                <a href="about.html" class="nav-a">About Us</a>
+                <span>|</span>
+                <a href="branches.html" class="nav-a">Branches</a>
+                <span>|</span>
+                <a href="shop.html" class="nav-a">Shop</a>
+                <span>|</span>
+                <a href="events.html" class="nav-a">Events</a>
+                <span>|</span>
+                <a href="contact.html" class="nav-a">Contact</a>
             </div>
 
-            <footer>
-                We are a 501(c)(3) organization. Donations are tax exemptable.
-            </footer>
+            <div id="mobile-navbar">
+                <a href="shop.html" class="underline-on-hover">Shop</a>
+                <a href="about.html" class="underline-on-hover">About</a>
+                <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+                <a href="events.html" class="underline-on-hover">Events</a>
+                <a href="contact.html" class="underline-on-hover">Contact</a>
+            </div>
+        </nav>
+
+        <div id="our-team">
+            <h1>Branches</h1>
+        </div>
+
+        <div id="subheading">
+            <p>SLCA currently possesses 14 active state branches. Thirteen are within the United States and one is in Ontario, Canada. We are continuing our efforts to expand further.</p>
+        </div>
+
+        <ul class="branch-list">
+            <li>
+                <div class="branch-info">
+                    <h3>California</h3>
+                    <p>Details about the California branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Colorado</h3>
+                    <p>Details about the Colorado branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Florida</h3>
+                    <p>Details about the Florida branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Georgia</h3>
+                    <p>Details about the Georgia branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Massachusetts</h3>
+                    <p>Details about the Massachusetts branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Maryland</h3>
+                    <p>Details about the Maryland branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Minnesota</h3>
+                    <p>Details about the Minnesota branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>New York</h3>
+                    <p>Details about the New York branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>North Carolina</h3>
+                    <p>Details about the North Carolina branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Ontario</h3>
+                    <p>Details about the Ontario branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Texas</h3>
+                    <p>Details about the Texas branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Utah</h3>
+                    <p>Details about the Utah branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Virginia</h3>
+                    <p>Details about the Virginia branch.</p>
+                </div>
+            </li>
+            <li>
+                <div class="branch-info">
+                    <h3>Washington</h3>
+                    <p>Details about the Washington branch.</p>
+                </div>
+            </li>
+        </ul>
+
+        <footer>
+            We are a 501(c)(3) organization. Donations are tax exemptable.
+        </footer>
     </div>
 
     <script src='darkvlight.js'></script>
