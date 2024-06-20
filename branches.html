@@ -12,55 +12,36 @@
     <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
     <style>
-        .branch-list {
-            list-style: none;
-            padding: 0;
-            margin: 10px auto;
-            max-width: 800px;
-            font-size: 14px;
+        /* Branches specific styling */
+        .branch-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
 
-        .branch-list li {
-            background-color: #fff;
-            padding: 8px;
-            margin: 4px 0;
-            border-radius: 5px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .branch-list li .branch-info {
-            flex-grow: 1;
-        }
-
-        .branch-list li .branch-info h3 {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .branch-list li .branch-info p {
-            margin: 0;
-            font-size: 12px;
-            color: #666;
-        }
-
-        #our-team {
+        .branch {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
+            transition: border 0.3s;
+            width: calc(33% - 40px); /* Adjusting width for 3 items per row with gap */
+        }
+
+        .branch:hover {
+            border: 2px solid #ffcc00;
+        }
+
+        .branch img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .branch h3 {
             margin: 10px 0;
-        }
-
-        #subheading {
-            text-align: center;
-            margin: 10px auto;
-            max-width: 800px;
-            font-size: 14px;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 12px;
         }
     </style>
 </head>
@@ -99,96 +80,78 @@
             <h1>Branches</h1>
         </div>
 
-        <div id="subheading">
-            <p>SLCA currently possesses 14 active state branches. Thirteen are within the United States and one is in Ontario, Canada. We are continuing our efforts to expand further.</p>
+        <div class="branch-container">
+            <div class="branch">
+                <img src="./public/branch_california.jpg" alt="California Branch">
+                <h3>California</h3>
+                <p>Details about the California branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_colorado.jpg" alt="Colorado Branch">
+                <h3>Colorado</h3>
+                <p>Details about the Colorado branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_florida.jpg" alt="Florida Branch">
+                <h3>Florida</h3>
+                <p>Details about the Florida branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_georgia.jpg" alt="Georgia Branch">
+                <h3>Georgia</h3>
+                <p>Details about the Georgia branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_massachusetts.jpg" alt="Massachusetts Branch">
+                <h3>Massachusetts</h3>
+                <p>Details about the Massachusetts branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_maryland.jpg" alt="Maryland Branch">
+                <h3>Maryland</h3>
+                <p>Details about the Maryland branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_minnesota.jpg" alt="Minnesota Branch">
+                <h3>Minnesota</h3>
+                <p>Details about the Minnesota branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_newyork.jpg" alt="New York Branch">
+                <h3>New York</h3>
+                <p>Details about the New York branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_northcarolina.jpg" alt="North Carolina Branch">
+                <h3>North Carolina</h3>
+                <p>Details about the North Carolina branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_ohio.jpg" alt="Ohio Branch">
+                <h3>Ohio</h3>
+                <p>Details about the Ohio branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_texas.jpg" alt="Texas Branch">
+                <h3>Texas</h3>
+                <p>Details about the Texas branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_utah.jpg" alt="Utah Branch">
+                <h3>Utah</h3>
+                <p>Details about the Utah branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_virginia.jpg" alt="Virginia Branch">
+                <h3>Virginia</h3>
+                <p>Details about the Virginia branch.</p>
+            </div>
+            <div class="branch">
+                <img src="./public/branch_washington.jpg" alt="Washington Branch">
+                <h3>Washington</h3>
+                <p>Details about the Washington branch.</p>
+            </div>
         </div>
-
-        <ul class="branch-list">
-            <li>
-                <div class="branch-info">
-                    <h3>California</h3>
-                    <p>Details about the California branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Colorado</h3>
-                    <p>Details about the Colorado branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Florida</h3>
-                    <p>Details about the Florida branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Georgia</h3>
-                    <p>Details about the Georgia branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Massachusetts</h3>
-                    <p>Details about the Massachusetts branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Maryland</h3>
-                    <p>Details about the Maryland branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Minnesota</h3>
-                    <p>Details about the Minnesota branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>New York</h3>
-                    <p>Details about the New York branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>North Carolina</h3>
-                    <p>Details about the North Carolina branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Ontario</h3>
-                    <p>Details about the Ontario branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Texas</h3>
-                    <p>Details about the Texas branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Utah</h3>
-                    <p>Details about the Utah branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Virginia</h3>
-                    <p>Details about the Virginia branch.</p>
-                </div>
-            </li>
-            <li>
-                <div class="branch-info">
-                    <h3>Washington</h3>
-                    <p>Details about the Washington branch.</p>
-                </div>
-            </li>
-        </ul>
 
         <footer>
             We are a 501(c)(3) organization. Donations are tax exemptable.
