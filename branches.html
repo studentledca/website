@@ -28,13 +28,13 @@
             border-radius: 50%;
             text-align: center;
             transition: border 0.3s;
-            width: 200px;
-            height: 200px;
-            overflow: hidden;
+            width: 150px;
+            height: 150px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
         }
 
         .branch:hover {
@@ -43,19 +43,23 @@
 
         .branch img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border-radius: 50%;
         }
 
-        .branch h3 {
-            margin: 10px 0 0;
+        .branch-name {
+            margin-top: 10px;
             font-weight: bold;
             font-size: 16px;
+            color: #fff;
+            text-align: center;
         }
 
-        .branch p {
-            margin: 5px 0 0;
+        .branch-details {
             font-size: 14px;
+            color: #fff;
+            text-align: center;
         }
     </style>
 </head>
@@ -95,75 +99,103 @@
         </div>
 
         <div class="branch-container">
-            <div class="branch">
-                <img src="./public/branch_california-removebg-preview.png" alt="California Branch">
-                <h3>California</h3>
-                <p>Details about the California branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_california-removebg-preview.png" alt="California Branch">
+                </div>
+                <div class="branch-name">California</div>
+                <div class="branch-details">Details about the California branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_colorado-removebg-preview.png" alt="Colorado Branch">
-                <h3>Colorado</h3>
-                <p>Details about the Colorado branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_colorado-removebg-preview.png" alt="Colorado Branch">
+                </div>
+                <div class="branch-name">Colorado</div>
+                <div class="branch-details">Details about the Colorado branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_florida-removebg-preview.png" alt="Florida Branch">
-                <h3>Florida</h3>
-                <p>Details about the Florida branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_florida-removebg-preview.png" alt="Florida Branch">
+                </div>
+                <div class="branch-name">Florida</div>
+                <div class="branch-details">Details about the Florida branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_georgia-removebg-preview.png" alt="Georgia Branch">
-                <h3>Georgia</h3>
-                <p>Details about the Georgia branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_georgia-removebg-preview.png" alt="Georgia Branch">
+                </div>
+                <div class="branch-name">Georgia</div>
+                <div class="branch-details">Details about the Georgia branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_massachusetts-removebg-preview.png" alt="Massachusetts Branch">
-                <h3>Massachusetts</h3>
-                <p>Details about the Massachusetts branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_massachusetts-removebg-preview.png" alt="Massachusetts Branch">
+                </div>
+                <div class="branch-name">Massachusetts</div>
+                <div class="branch-details">Details about the Massachusetts branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_maryland-removebg-preview.png" alt="Maryland Branch">
-                <h3>Maryland</h3>
-                <p>Details about the Maryland branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_maryland-removebg-preview.png" alt="Maryland Branch">
+                </div>
+                <div class="branch-name">Maryland</div>
+                <div class="branch-details">Details about the Maryland branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_minnesota-removebg-preview.png" alt="Minnesota Branch">
-                <h3>Minnesota</h3>
-                <p>Details about the Minnesota branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_minnesota-removebg-preview.png" alt="Minnesota Branch">
+                </div>
+                <div class="branch-name">Minnesota</div>
+                <div class="branch-details">Details about the Minnesota branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_newyork-removebg-preview.png" alt="New York Branch">
-                <h3>New York</h3>
-                <p>Details about the New York branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_newyork-removebg-preview.png" alt="New York Branch">
+                </div>
+                <div class="branch-name">New York</div>
+                <div class="branch-details">Details about the New York branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_northcarolina-removebg-preview.png" alt="North Carolina Branch">
-                <h3>North Carolina</h3>
-                <p>Details about the North Carolina branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_northcarolina-removebg-preview.png" alt="North Carolina Branch">
+                </div>
+                <div class="branch-name">North Carolina</div>
+                <div class="branch-details">Details about the North Carolina branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_ontario-removebg-preview.png" alt="Ontario Branch">
-                <h3>Ontario</h3>
-                <p>Details about the Ontario branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_ontario-removebg-preview.png" alt="Ontario Branch">
+                </div>
+                <div class="branch-name">Ontario</div>
+                <div class="branch-details">Details about the Ontario branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_texas-removebg-preview.png" alt="Texas Branch">
-                <h3>Texas</h3>
-                <p>Details about the Texas branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_texas-removebg-preview.png" alt="Texas Branch">
+                </div>
+                <div class="branch-name">Texas</div>
+                <div class="branch-details">Details about the Texas branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_utah-removebg-preview.png" alt="Utah Branch">
-                <h3>Utah</h3>
-                <p>Details about the Utah branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_utah-removebg-preview.png" alt="Utah Branch">
+                </div>
+                <div class="branch-name">Utah</div>
+                <div class="branch-details">Details about the Utah branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_virginia-removebg-preview.png" alt="Virginia Branch">
-                <h3>Virginia</h3>
-                <p>Details about the Virginia branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_virginia-removebg-preview.png" alt="Virginia Branch">
+                </div>
+                <div class="branch-name">Virginia</div>
+                <div class="branch-details">Details about the Virginia branch.</div>
             </div>
-            <div class="branch">
-                <img src="./public/branch_washington-removebg-preview.png" alt="Washington Branch">
-                <h3>Washington</h3>
-                <p>Details about the Washington branch.</p>
+            <div>
+                <div class="branch">
+                    <img src="./public/branch_washington-removebg-preview.png" alt="Washington Branch">
+                </div>
+                <div class="branch-name">Washington</div>
+                <div class="branch-details">Details about the Washington branch.</div>
             </div>
         </div>
 
