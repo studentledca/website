@@ -25,10 +25,16 @@
             background-color: #333;
             color: #fff;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 50%;
             text-align: center;
             transition: border 0.3s;
-            width: calc(33% - 40px); /* Adjusting width for 3 items per row with gap */
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .branch:hover {
@@ -37,11 +43,19 @@
 
         .branch img {
             width: 100%;
-            border-radius: 10px;
+            height: auto;
+            border-radius: 50%;
         }
 
         .branch h3 {
-            margin: 10px 0;
+            margin: 10px 0 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .branch p {
+            margin: 5px 0 0;
+            font-size: 14px;
         }
     </style>
 </head>
