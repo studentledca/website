@@ -5,43 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <title>The Team - SLCA</title>
+    <title>SLCA</title>
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
     <style>
-        .dropdown {
-            position: relative;
-            display: inline-block;
+        /* Additional styling for alignment */
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+        h1 {
+            text-align: center;
         }
 
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #575757;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #333;
+        .section-heading {
+            text-align: left;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -56,15 +38,7 @@
                 <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
                 <a href="index.html" class="nav-a">Home</a>
                 <span>|</span>
-                <div class="dropdown">
-                    <a href="about.html" class="nav-a dropbtn">The Team</a>
-                    <div class="dropdown-content">
-                        <a href="#executive-team">Executive Team</a>
-                        <a href="#board-of-directors">Board of Directors</a>
-                        <a href="#branch-presidents">Branch Presidents</a>
-                        <a href="#alumni">Alumni</a>
-                    </div>
-                </div>
+                <a href="about.html" class="nav-a">The Team</a>
                 <span>|</span>
                 <a href="branches.html" class="nav-a">Branches</a>
                 <span>|</span>
@@ -77,8 +51,9 @@
 
             <div id="mobile-navbar">
                 <a href="shop.html" class="underline-on-hover">Shop</a>
-                <a href="about.html" class="underline-on-hover">The Team</a>
+                <a href="about.html" class="underline-on-hover">About</a>
                 <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+
                 <a href="events.html" class="underline-on-hover">Events</a>
                 <a href="contact.html" class="underline-on-hover">Contact</a>
             </div>
@@ -88,8 +63,8 @@
             <h1>The Team</h1>
         </div>
 
-        <div id="executive-team">
-            <h1>Meet Our Executive Team</h1>
+        <div class="container">
+            <h2 class="section-heading">Meet Our Executive Team</h2>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
@@ -99,7 +74,6 @@
                         <p>Interim Executive President</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -108,7 +82,6 @@
                         <p>Vice President of Finances</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
@@ -117,7 +90,6 @@
                         <p>Co-Vice President of Leagues</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
@@ -126,7 +98,6 @@
                         <p>Co-Vice President of Leagues</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -135,7 +106,6 @@
                         <p>Vice President of Social Media</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05J2A13925-745663013d44-512'></img>
@@ -144,7 +114,6 @@
                         <p>Vice President of Events</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4UL4SQM-a1e4811a9d15-512'></img>
@@ -153,7 +122,6 @@
                         <p>Vice President of Technology</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -162,25 +130,19 @@
                         <p>Vice President of Operations</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
             </section>
-        </div>
 
-        <div id="board-of-directors" style="padding-top: 0px; margin-top: 25px;">
-            <h1>Meet Our Board of Directors</h1>
+            <h2 class="section-heading">Meet Our Board of Directors</h2>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7MPBTAN-9e6b42cab44b-512'></img>
                     <div>
-                        <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/"
-                                style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a>
-                        </h1>
+                        <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a></h1>
                         <p>Chairman of the Board</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -189,7 +151,6 @@
                         <p>Member of the Board</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/brennan.png'></img>
@@ -198,7 +159,6 @@
                         <p>Member of the Board</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -208,10 +168,8 @@
                     </div>
                 </div>
             </section>
-        </div>
 
-        <div id="branch-presidents" style="padding-top: 0px; margin-top: 25px;">
-            <h1>Meet Our Branch Presidents</h1>
+            <h2 class="section-heading">Meet Our Branch Presidents</h2>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
@@ -221,7 +179,6 @@
                         <p>California</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
@@ -230,7 +187,6 @@
                         <p>Colorado</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
@@ -239,7 +195,6 @@
                         <p>Florida</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -248,7 +203,6 @@
                         <p>Georgia</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -257,7 +211,6 @@
                         <p>Illinois</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -266,7 +219,6 @@
                         <p>Maryland</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -275,7 +227,6 @@
                         <p>Massachusetts</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -284,7 +235,6 @@
                         <p>Minnesota</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -293,7 +243,6 @@
                         <p>New York</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -302,7 +251,6 @@
                         <p>North Carolina</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -311,7 +259,6 @@
                         <p>Oklahoma</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -320,7 +267,6 @@
                         <p>Ontario</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -329,7 +275,6 @@
                         <p>Texas</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -338,7 +283,6 @@
                         <p>Utah</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -347,7 +291,6 @@
                         <p>Virginia</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -356,7 +299,6 @@
                         <p>Washington</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -365,11 +307,10 @@
                         <p>Wyoming</p>
                     </div>
                 </div>
+                <hr class="solid skiphr">
             </section>
-        </div>
 
-        <div id="alumni" style="padding-top: 0px; margin-top: 25px;">
-            <h1>Meet Our Alumni</h1>
+            <h2 class="section-heading">Meet Our Alumni</h2>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
@@ -379,7 +320,6 @@
                         <p>Founder & Former Executive Co-President</p>
                     </div>
                 </div>
-
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -392,9 +332,7 @@
         </div>
 
         <footer>
-            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members
-            commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if you
-            wish to make a difference in the chess community.
+            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if you wish to make a difference in the chess community.
         </footer>
     </div>
 
