@@ -9,7 +9,58 @@
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
+    <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        /* Additional styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        #team-title {
+            text-align: center;
+            font-size: 10vmin;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 10vh 0;
+            line-height: 0.9;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: left;
+            margin-left: 5%;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +73,15 @@
                 <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
                 <a href="index.html" class="nav-a">Home</a>
                 <span>|</span>
-                <a href="about.html" class="nav-a">The Team</a>
+                <div class="dropdown">
+                    <a class="nav-a dropbtn">The Team</a>
+                    <div class="dropdown-content">
+                        <a href="#executive-team">Executive Team</a>
+                        <a href="#board-of-directors">Board of Directors</a>
+                        <a href="#branch-presidents">Branch Presidents</a>
+                        <a href="#alumni">Alumni</a>
+                    </div>
+                </div>
                 <span>|</span>
                 <a href="branches.html" class="nav-a">Branches</a>
                 <span>|</span>
@@ -35,304 +94,333 @@
 
             <div id="mobile-navbar">
                 <a href="shop.html" class="underline-on-hover">Shop</a>
-                <a href="about.html" class="underline-on-hover">The Team</a>
+                <a href="about.html" class="underline-on-hover">About</a>
                 <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
-
                 <a href="events.html" class="underline-on-hover">Events</a>
                 <a href="contact.html" class="underline-on-hover">Contact</a>
             </div>
         </nav>
 
-        <div id="our-team">
-            <h1 style="font-size: 6vmin;">The Team</h1>
-        </div>
+        <div id="team-title">The Team</div>
 
-        <section id="people-container">
-            <h2>Meet Our Executive Team</h2>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05H963DA4F-7c95a4d3f4b3-512'></img>
-                <div>
-                    <h1 class="underline-on-hover">Bobby King</h1>
-                    <p>Interim Executive President</p>
+        <section id="executive-team">
+            <h1 class="section-title">Meet Our Executive Team</h1>
+            <section id="people-container">
+                <hr class="solid skiphr">
+
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H963DA4F-7c95a4d3f4b3-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Bobby King</h1>
+                        <p>Interim Executive President</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Luca Weisman</h1>
-                    <p>Vice President of Finances</p>
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Luca Weisman</h1>
+                        <p>Vice President of Finances</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
-                <div>
-                    <h1 class="underline-on-hover">Lacey Rael</h1>
-                    <p>Co-Vice President of Leagues</p>
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Lacey Rael</h1>
+                        <p>Co-Vice President of Leagues</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
-                <div>
-                    <h1 class="underline-on-hover">Maya Behura</h1>
-                    <p>Co-Vice President of Leagues</p>
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Maya Behura</h1>
+                        <p>Co-Vice President of Leagues</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Tawfiq Ahmed</h1>
-                    <p>Vice President of Social Media</p>
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Tawfiq Ahmed</h1>
+                        <p>Vice President of Social Media</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05J2A13925-745663013d44-512'></img>
-                <div>
-                    <h1 class="underline-on-hover">Nihal Maddirala</h1>
-                    <p>Vice President of Events</p>
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05J2A13925-745663013d44-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Nihal Maddirala</h1>
+                        <p>Vice President of Events</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4UL4SQM-a1e4811a9d15-512'></img>
-                <div>
-                    <h1 class="underline-on-hover">Aniruth Ananthanarayanan</h1>
-                    <p>Vice President of Technology</p>
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4UL4SQM-a1e4811a9d15-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Aniruth Ananthanarayanan</h1>
+                        <p>Vice President of Technology</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Anish Hariharan</h1>
-                    <p>Vice President of Operations</p>
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Anish Hariharan</h1>
+                        <p>Vice President of Operations</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
+            </section>
         </section>
 
-        <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-            <h2>Meet Our Board of Directors</h2>
-        </div>
-
-        <section id="people-container">
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7MPBTAN-9e6b42cab44b-512'></img>
-                <div>
-                    <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/"
-                            style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a>
-                    </h1>
-                    <p>Chairman of the Board</p>
+        <section id="board-of-directors">
+            <h1 class="section-title">Meet Our Board of Directors</h1>
+            <section id="people-container">
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7MPBTAN-9e6b42cab44b-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/"
+                                style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a>
+                        </h1>
+                        <p>Chairman of the Board</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Jatin Potnuri</h1>
-                    <p>Member of the Board</p>
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Jatin Potnuri</h1>
+                        <p>Member of the Board</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/brennan.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Brennan Baker</h1>
-                    <p>Member of the Board</p>
+                <div class="person-container">
+                    <img src='public/brennan.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Brennan Baker</h1>
+                        <p>Member of the Board</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
+                <hr class="solid skiphr">
 
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Mahith Ravulapati</h1>
-                    <p>Member of the Board</p>
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Mahith Ravulapati</h1>
+                        <p>Member of the Board</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
 
-        <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-            <h2>Meet Our Branch Presidents</h2>
-        </div>
+        <section id="branch-presidents">
+            <h1 class="section-title">Meet Our Branch Presidents</h1>
+            <section id="people-container">
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Nidhi Mehta</h1>
+                        <p>California</p>
+                    </div>
+                </div>
 
-        <section id="people-container">
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Nidhi Mehta</h1>
-                    <p>California</p>
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Lacey Rael</h1>
+                        <p>Colorado</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Lacey Rael</h1>
-                    <p>Colorado</p>
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Maya Behura</h1>
+                        <p>Florida</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Maya Behura</h1>
-                    <p>Florida</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Dhruv Rajaganesh</h1>
+                        <p>Georgia</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Dhruv Rajaganesh</h1>
-                    <p>Georgia</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">TBD</h1>
+                        <p>Illinois</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Sam Alkhrdaji</h1>
-                    <p>Maryland</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Sam Alkhrdaji</h1>
+                        <p>Maryland</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Oliver Romanovsky</h1>
-                    <p>Massachusetts</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Oliver Romanovsky</h1>
+                        <p>Massachusetts</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Alex Wang</h1>
-                    <p>Minnesota</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Alex Wang</h1>
+                        <p>Minnesota</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Nune Melikian</h1>
-                    <p>New York</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Nune Melikian</h1>
+                        <p>New York</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Maulik Verma</h1>
-                    <p>North Carolina</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Maulik Verma</h1>
+                        <p>North Carolina</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Kai Bar-On</h1>
-                    <p>Ontario</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">TBD</h1>
+                        <p>Oklahoma</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Tanush Saxena</h1>
-                    <p>Texas</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Kai Bar-On</h1>
+                        <p>Ontario</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Aditya Mole</h1>
-                    <p>Utah</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Tanush Saxena</h1>
+                        <p>Texas</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Vishruth Anugula</h1>
-                    <p>Virginia</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Aditya Mole</h1>
+                        <p>Utah</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Stephanie Velea</h1>
-                    <p>Washington</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Vishruth Anugula</h1>
+                        <p>Virginia</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Grayson Heiner</h1>
-                    <p>Wyoming</p>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Stephanie Velea</h1>
+                        <p>Washington</p>
+                    </div>
                 </div>
-            </div>
-            <hr class="solid skiphr">
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Grayson Heiner</h1>
+                        <p>Wyoming</p>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-            <h2>Meet Our Alumni</h2>
-        </div>
-
-        <section id="people-container">
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Suden Prashar</h1>
-                    <p>Founder & Former Executive Co-President</p>
+        <section id="alumni">
+            <h1 class="section-title">Meet Our Alumni</h1>
+            <section id="people-container">
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Suden Prashar</h1>
+                        <p>Founder & Former Executive Co-President</p>
+                    </div>
                 </div>
-            </div>
 
-            <hr class="solid skiphr">
-            <div class="person-container">
-                <img src='public/blank.png'></img>
-                <div>
-                    <h1 class="underline-on-hover">Raymond Zhang</h1>
-                    <p>Former Vice President of Finance</p>
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Raymond Zhang</h1>
+                        <p>Former Vice President of Finance</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
 
         <footer>
-            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if you wish to make a difference in the chess community.
+            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members
+            commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if
+            you wish to make a difference in the chess community.
         </footer>
     </div>
 
