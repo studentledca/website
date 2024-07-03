@@ -5,11 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <title>SLCA</title>
+    <title>The Team - SLCA</title>
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #333;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,76 +52,46 @@
     </div>
     <div id="content" style="display: none;">
         <nav id="nav-container">
-            <nav id="nav-container">
-                <div id="navbar" class="white-txt">
-                    <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
-                    <a href="index.html" class="nav-a">Home</a>
-                    <span>|</span>
-                    <a href="about.html" class="nav-a">About Us</a>
-                    <span>|</span>
-                    <a href="branches.html" class="nav-a">Branches</a>
-                    <span>|</span>
-                    <a href="shop.html" class="nav-a">Shop</a>
-                    <span>|</span>
-                    <a href="events.html" class="nav-a">Events</a>
-                    <span>|</span>
-                    <a href="contact.html" class="nav-a">Contact</a>
+            <div id="navbar" class="white-txt">
+                <a onclick="switchStyle()" id="logo-holder"><img class="logo" src="./public/logodark.png"></a>
+                <a href="index.html" class="nav-a">Home</a>
+                <span>|</span>
+                <div class="dropdown">
+                    <a href="about.html" class="nav-a dropbtn">The Team</a>
+                    <div class="dropdown-content">
+                        <a href="#executive-team">Executive Team</a>
+                        <a href="#board-of-directors">Board of Directors</a>
+                        <a href="#branch-presidents">Branch Presidents</a>
+                        <a href="#alumni">Alumni</a>
+                    </div>
                 </div>
-
-                <div id="mobile-navbar">
-                    <a href="shop.html" class="underline-on-hover">Shop</a>
-                    <a href="about.html" class="underline-on-hover">About</a>
-                    <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
-
-                    <a href="events.html" class="underline-on-hover">Events</a>
-                    <a href="contact.html" class="underline-on-hover">Contact</a>
-                </div>
-            </nav>
-
-            <div id="our-team">
-                <h1>About Us</h1>
+                <span>|</span>
+                <a href="branches.html" class="nav-a">Branches</a>
+                <span>|</span>
+                <a href="shop.html" class="nav-a">Shop</a>
+                <span>|</span>
+                <a href="events.html" class="nav-a">Events</a>
+                <span>|</span>
+                <a href="contact.html" class="nav-a">Contact</a>
             </div>
 
-            <section title="about" id="about-container" class="grey-txt"
-                style="height: min-content; padding-bottom: 0px; margin-top: -10vh;">
-                <div id="whoarewe">
-                    <h1 class=" underline-on-hover" style="font-size: 6vmin;">Who are we?</h1>
-
-                    <p style="font-size: 3vmin;">The Student Led Chess Association, or SLCA, is a 501(c) nonprofit
-                        organization dedicated to helping the community through chess education. As a nationwide
-                        association of high school students, SLCA hosts numerous tournaments, chess camps, and other
-                        initiatives to give to the community, inspire change, and promote critical thinking skills. Our
-                        mission is simple: to improve the lives of young people through chess education.
-
-                    </p>
-                </div>
-
-
-                <div id="whoarewe">
-                    <h1 class=" underline-on-hover" style="font-size: 6vmin;">Events</h1>
-
-                    <p style="font-size: 3vmin;">Given its status as an organization run entirely by high school
-                        students, SLCA has made remarkable achievements in promoting chess. Several statewide
-                        tournaments with over 100 participants have been organized and successfully carried out; in the
-                        summer, SLCA branches host C.A.S.T.L.E. chess camps to invigorate young minds in low-income
-                        communities, and numerous other events occur regularly throughout the year. For a list of some
-                        of our past, present, and future work, please consult our events page.
-
-                    </p>
-                </div>
-
-            </section>
-
-
-            <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-                <h1>Meet Our Executive Team</h1>
+            <div id="mobile-navbar">
+                <a href="shop.html" class="underline-on-hover">Shop</a>
+                <a href="about.html" class="underline-on-hover">The Team</a>
+                <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+                <a href="events.html" class="underline-on-hover">Events</a>
+                <a href="contact.html" class="underline-on-hover">Contact</a>
             </div>
+        </nav>
 
+        <div id="our-team">
+            <h1>The Team</h1>
+        </div>
+
+        <div id="executive-team">
+            <h1>Meet Our Executive Team</h1>
             <section id="people-container">
-
-
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H963DA4F-7c95a4d3f4b3-512'></img>
                     <div>
@@ -97,7 +101,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -107,7 +110,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
                     <div>
@@ -117,7 +119,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
                     <div>
@@ -127,7 +128,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -137,7 +137,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05J2A13925-745663013d44-512'></img>
                     <div>
@@ -147,7 +146,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4UL4SQM-a1e4811a9d15-512'></img>
                     <div>
@@ -157,7 +155,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -168,11 +165,10 @@
 
                 <hr class="solid skiphr">
             </section>
+        </div>
 
-            <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-                <h1>Meet Our Board of Directors</h1>
-            </div>
-
+        <div id="board-of-directors" style="padding-top: 0px; margin-top: 25px;">
+            <h1>Meet Our Board of Directors</h1>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
@@ -186,7 +182,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -196,7 +191,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/brennan.png'></img>
                     <div>
@@ -206,7 +200,6 @@
                 </div>
 
                 <hr class="solid skiphr">
-
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -215,11 +208,168 @@
                     </div>
                 </div>
             </section>
+        </div>
 
-            <div id="our-team" style="padding-top: 0px; margin-top: 25px;">
-                <h1>Meet Our Alumni</h1>
-            </div>
+        <div id="branch-presidents" style="padding-top: 0px; margin-top: 25px;">
+            <h1>Meet Our Branch Presidents</h1>
+            <section id="people-container">
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Nidhi Mehta</h1>
+                        <p>California</p>
+                    </div>
+                </div>
 
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Lacey Rael</h1>
+                        <p>Colorado</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Maya Behura</h1>
+                        <p>Florida</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Dhruv Rajaganesh</h1>
+                        <p>Georgia</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">TBD</h1>
+                        <p>Illinois</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Sam Alkhrdaji</h1>
+                        <p>Maryland</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Oliver Romanovsky</h1>
+                        <p>Massachusetts</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Alex Wang</h1>
+                        <p>Minnesota</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Nune Melikian</h1>
+                        <p>New York</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Maulik Verma</h1>
+                        <p>North Carolina</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">TBD</h1>
+                        <p>Oklahoma</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Kai Bar-On</h1>
+                        <p>Ontario</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Tanush Saxena</h1>
+                        <p>Texas</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Aditya Mole</h1>
+                        <p>Utah</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Vishruth Anugula</h1>
+                        <p>Virginia</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Stephanie Velea</h1>
+                        <p>Washington</p>
+                    </div>
+                </div>
+
+                <hr class="solid skiphr">
+                <div class="person-container">
+                    <img src='public/blank.png'></img>
+                    <div>
+                        <h1 class="underline-on-hover">Grayson Heiner</h1>
+                        <p>Wyoming</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="alumni" style="padding-top: 0px; margin-top: 25px;">
+            <h1>Meet Our Alumni</h1>
             <section id="people-container">
                 <hr class="solid skiphr">
                 <div class="person-container">
@@ -239,46 +389,13 @@
                     </div>
                 </div>
             </section>
+        </div>
 
-            <section title="alumni" id="about-container" class="grey-txt" style="display: none;">
-                <div id="whoarewe">
-                    <h1 class=" underline-on-hover" style="font-size: 6vmin;">SLCA Alumni</h1>
-
-                    <p style="font-size: 3vmin;">The Student Led Chess Association (SLCA) is a non-profit organization
-                        that uses
-                        chess to improve local
-                        communities. SLCA
-                        is North America's largest student-run chess nonprofit organization.
-
-                    </p>
-                </div>
-
-                <div id="whoarewe">
-                    <h1 class=" underline-on-hover" style="font-size: 6vmin;">SLCA Alumni</h1>
-
-                    <p style="font-size: 3vmin;">SLCA's mission is to promote chess and make a difference in
-                        communities. We
-                        offer
-                        a variety of chess
-                        programs
-                        and
-                        workshops at no cost. SLCA also hosts charity tournaments and helps teach unprivileged children.
-                        We run a
-                        high
-                        school
-                        league in several states and have 256 school branches
-                    </p>
-                </div>
-
-            </section>
-
-
-            <footer>
-                As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and
-                members commit themselves to SLCA entirely for the sake of helping others out. Please consider donating
-                to us if you wish to make a difference in the chess community.
-
-            </footer>
+        <footer>
+            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members
+            commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if you
+            wish to make a difference in the chess community.
+        </footer>
     </div>
 
     <script src='darkvlight.js'></script>
