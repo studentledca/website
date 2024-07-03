@@ -9,37 +9,16 @@
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/misc.css" rel="stylesheet" type="text/css" />
+    <link href="./css/eventsBranches.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
     <style>
-        /* Align The Team title similar to other pages */
-        #team-title {
-            font-size: 8vmin;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding-top: 5%;
-        }
-
-        /* Align the header items */
-        #navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #navbar a {
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-        }
-
-        #navbar .dropdown {
+        /* Additional styling */
+        .dropdown {
             position: relative;
             display: inline-block;
         }
 
-        #navbar .dropdown-content {
+        .dropdown-content {
             display: none;
             position: absolute;
             background-color: #333;
@@ -48,69 +27,38 @@
             z-index: 1;
         }
 
-        #navbar .dropdown-content a {
+        .dropdown-content a {
             color: white;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
 
-        #navbar .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
+        .dropdown-content a:hover {
+            background-color: #575757;
         }
 
-        #navbar .dropdown:hover .dropdown-content {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
 
+        .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        #team-title {
+            text-align: center;
+            font-size: 10vmin;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 10vh 0;
+            line-height: 0.9;
+            font-weight: bold;
+        }
+
         .section-title {
-            font-size: 6vmin;
-            color: white;
             text-align: left;
-            padding-left: 10%;
-            margin: 0;
-        }
-
-        #people-container {
-            padding: 0 10%;
-        }
-
-        .person-container {
-            display: flex;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .person-container img {
-            border-radius: 50%;
-            margin-right: 20px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .person-container h1 {
-            font-size: 3vmin;
-            margin: 0;
-        }
-
-        .person-container p {
-            font-size: 2vmin;
-            margin: 5px 0 0;
-        }
-
-        .solid {
-            border-top: 3px solid #bbb;
-        }
-
-        .skiphr {
-            border: 0;
-            height: 1px;
-            background: #333;
-        }
-
-        .underline-on-hover:hover {
-            text-decoration: underline;
+            margin-left: 5%;
         }
     </style>
 </head>
@@ -126,7 +74,7 @@
                 <a href="index.html" class="nav-a">Home</a>
                 <span>|</span>
                 <div class="dropdown">
-                    <a href="about.html" class="nav-a">The Team</a>
+                    <a class="nav-a dropbtn">The Team</a>
                     <div class="dropdown-content">
                         <a href="#executive-team">Executive Team</a>
                         <a href="#board-of-directors">Board of Directors</a>
@@ -143,16 +91,23 @@
                 <span>|</span>
                 <a href="contact.html" class="nav-a">Contact</a>
             </div>
+
+            <div id="mobile-navbar">
+                <a href="shop.html" class="underline-on-hover">Shop</a>
+                <a href="about.html" class="underline-on-hover">About</a>
+                <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+                <a href="events.html" class="underline-on-hover">Events</a>
+                <a href="contact.html" class="underline-on-hover">Contact</a>
+            </div>
         </nav>
 
-        <div id="team-title">
-            <h1>The Team</h1>
-        </div>
+        <div id="team-title">The Team</div>
 
         <section id="executive-team">
             <h1 class="section-title">Meet Our Executive Team</h1>
             <section id="people-container">
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H963DA4F-7c95a4d3f4b3-512'></img>
                     <div>
@@ -160,7 +115,9 @@
                         <p>Interim Executive President</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -168,7 +125,9 @@
                         <p>Vice President of Finances</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7N74GGJ-c3178538083f-512'></img>
                     <div>
@@ -176,7 +135,9 @@
                         <p>Co-Vice President of Leagues</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4QALTFX-ccdd64686618-512'></img>
                     <div>
@@ -184,7 +145,9 @@
                         <p>Co-Vice President of Leagues</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -192,7 +155,9 @@
                         <p>Vice President of Social Media</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05J2A13925-745663013d44-512'></img>
                     <div>
@@ -200,7 +165,9 @@
                         <p>Vice President of Events</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H4UL4SQM-a1e4811a9d15-512'></img>
                     <div>
@@ -208,7 +175,9 @@
                         <p>Vice President of Technology</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -216,6 +185,7 @@
                         <p>Vice President of Operations</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
             </section>
         </section>
@@ -227,11 +197,15 @@
                 <div class="person-container">
                     <img src='https://ca.slack-edge.com/T05H1269APQ-U05H7MPBTAN-9e6b42cab44b-512'></img>
                     <div>
-                        <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a></h1>
+                        <h1 class="underline-on-hover"><a href="https://www.linkedin.com/in/arjun-iyer-0b7b5924b/"
+                                style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Arjun Iyer</a>
+                        </h1>
                         <p>Chairman of the Board</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -239,7 +213,9 @@
                         <p>Member of the Board</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/brennan.png'></img>
                     <div>
@@ -247,7 +223,9 @@
                         <p>Member of the Board</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
+
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
@@ -269,6 +247,7 @@
                         <p>California</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -277,14 +256,16 @@
                         <p>Colorado</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
-                    <img src='public/ChrisHoffFSLCA.png'></img>
+                    <img src='public/blank.png'></img>
                     <div>
-                        <h1 class="underline-on-hover">Christopher Hoffman</h1>
+                        <h1 class="underline-on-hover">Maya Behura</h1>
                         <p>Florida</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -293,14 +274,16 @@
                         <p>Georgia</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
-                        <h1 class="underline-on-hover">Aarush Vora</h1>
+                        <h1 class="underline-on-hover">TBD</h1>
                         <p>Illinois</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -309,6 +292,7 @@
                         <p>Maryland</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -317,6 +301,7 @@
                         <p>Massachusetts</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -325,6 +310,7 @@
                         <p>Minnesota</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -333,6 +319,7 @@
                         <p>New York</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -341,6 +328,7 @@
                         <p>North Carolina</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -349,6 +337,7 @@
                         <p>Oklahoma</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -357,6 +346,7 @@
                         <p>Ontario</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -365,6 +355,7 @@
                         <p>Texas</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -373,14 +364,16 @@
                         <p>Utah</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
-                    <img src='public/VishAnuguVSLCA.jpg'></img>
+                    <img src='public/blank.png'></img>
                     <div>
                         <h1 class="underline-on-hover">Vishruth Anugula</h1>
                         <p>Virginia</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -389,6 +382,7 @@
                         <p>Washington</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -411,6 +405,7 @@
                         <p>Founder & Former Executive Co-President</p>
                     </div>
                 </div>
+
                 <hr class="solid skiphr">
                 <div class="person-container">
                     <img src='public/blank.png'></img>
@@ -423,7 +418,9 @@
         </section>
 
         <footer>
-            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if you wish to make a difference in the chess community.
+            As a 501(c) nonprofit organization, SLCA runs entirely on donations, sponsorships, and grants, and members
+            commit themselves to SLCA entirely for the sake of helping others out. Please consider donating to us if
+            you wish to make a difference in the chess community.
         </footer>
     </div>
 
