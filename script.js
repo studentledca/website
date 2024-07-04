@@ -81,7 +81,9 @@ function threeDotThing(element) {
         }
         element.innerHTML += "."
         dots++;
-    }, 600);
+    }, 400);
+
+    return interval;
 }
 
 let endings = [
@@ -114,7 +116,13 @@ let replaceIntroText = () => {
         setTimeout(() => {
             typePhrase(learnMore, ending.text, ending.emoji, () => {
                 if (!ending.emoji) {
-                    threeDotThing(learnMore);
+                    setTimeout(() => {
+                        let thing = threeDotThing(learnMore);
+                        setTimeout(() => {
+                            clearInterval(thing);
+                            replaceIntroText();
+                        }, 1400)
+                    }, 300)
                 }
             });
         }, 300)
