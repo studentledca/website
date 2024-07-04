@@ -86,6 +86,17 @@ function threeDotThing(element) {
 
 let endings = [
     { link: './events.html', text: 'teach analytical thinking' },
+
+    { link: './events.html', text: 'aid low-income communities' },
+    { link: './events.html', text: 'change children’s lives' },
+    { link: './events.html', text: 'build lifelong friendships' },
+    { link: './events.html', text: 'grow the minds of youth' },
+    { link: './events.html', text: 'teach teamwork' },
+    { link: './events.html', text: 'foster a sense of belonging' },
+    { link: './events.html', text: 'improve communication skills' },
+    { link: './events.html', text: 'unlock hidden potential' },
+    { link: './events.html', text: 'break down barriers' },
+    { link: './events.html', text: 'unite people together' },
 ];
 
 for (let i = 0; i < 100; i++) {
