@@ -16,7 +16,6 @@
         .dropdown {
             position: relative;
             display: inline-block;
-            vertical-align: middle; /* Aligns the tab vertically */
         }
 
         .dropdown-content {
@@ -62,7 +61,11 @@
             margin-left: 5%;
         }
 
-        #navbar .nav-a {
+        .nav-a {
+            padding: 0 20px;
+        }
+        
+        .dropbtn {
             padding: 0 20px;
         }
     </style>
@@ -79,7 +82,7 @@
                 <a href="index.html" class="nav-a">Home</a>
                 <span>|</span>
                 <div class="dropdown">
-                    <a class="nav-a dropbtn" style="line-height: 1.6;">People</a>
+                    <a class="nav-a dropbtn">People</a>
                     <div class="dropdown-content">
                         <a href="#executive-team">Executive Team</a>
                         <a href="#board-of-directors">Board of Directors</a>
@@ -90,8 +93,6 @@
                 <span>|</span>
                 <a href="branches.html" class="nav-a">Branches</a>
                 <span>|</span>
-              <!--  <a href="shop.html" class="nav-a">Shop</a>
-                <span>|</span> -->
                 <a href="events.html" class="nav-a">Events</a>
                 <span>|</span>
                 <a href="contact.html" class="nav-a">Contact</a>
@@ -340,7 +341,7 @@
                 <div class="person-container">
                     <img src='public/blank.png'></img>
                     <div>
-                        <h1 class="underline-on-hover">TBD</p></h1>
+                        <h1 class="underline-on-hover">TBD</h1>
                         <p>Oklahoma</p>
                     </div>
                 </div>
