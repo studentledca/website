@@ -9,6 +9,126 @@
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav-container {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .nav-a:hover {
+            text-decoration: underline;
+        }
+
+        #logo-holder img {
+            width: 50px;
+            height: auto;
+        }
+
+        #mobile-navbar {
+            display: none;
+        }
+
+        #introduction-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #intro-text {
+            font-size: 3em;
+        }
+
+        #scroll-to-see-more {
+            margin-top: 20px;
+        }
+
+        #about-container {
+            padding: 20px;
+        }
+
+        .underline-on-hover:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        #footer-sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-section h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #footer-socials {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #footer-socials a {
+            margin: 0 10px;
+        }
+
+        #footer-socials img {
+            width: 24px;
+            height: 24px;
+        }
+
+        #footer-bottom {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +164,6 @@
                 <a href="contact.html" class="underline-on-hover">Contact</a>
             </div>
         </nav>
-
 
         <section title="introduction" id="introduction-container">
             <h1 id="intro-text" class="dark-grey-txt">Using chess to <a
@@ -89,10 +208,41 @@
         </section>
 
         <footer>
-            We are a 501(c)(3) organization. Donations are tax exemptable.
+            <div id="footer-sections">
+                <div class="footer-section">
+                    <h2>Events</h2>
+                    <ul>
+                        <li><a href="#">Tournaments</a></li>
+                        <li><a href="#">CASTLE</a></li>
+                        <li><a href="#">EKG Chess</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Branches</h2>
+                    <ul>
+                        <li><a href="#">List All Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="#">Contact Form</a></li>
+                        <li><a href="#">Paypal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-socials">
+                <a href="https://www.instagram.com/studentledca/?hl=en"><img src="./public/igICON.png" alt="Instagram"></a>
+                <a href="https://twitter.com/studentledca"><img src="./public/twitterICON.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/@studentledca/shorts"><img src="./public/YTICON.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@studentledca"><img src="./public/tiktokICON.png" alt="TikTok"></a>
+                <a href="https://www.linkedin.com/company/slca-north-america"><img src="./public/LinkedINICON.png" alt="LinkedIn"></a>
+            </div>
+            <div id="footer-bottom">
+                <p>© 2024 Youth Economics Initiative Inc. All Rights Reserved.</p>
+            </div>
         </footer>
     </div>
-
 
     <script src='loader.js'></script>
     <script src='darkvlight.js'></script>
