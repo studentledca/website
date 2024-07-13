@@ -7,130 +7,8 @@
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <title>SLCA</title>
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
-
-        #nav-container {
-            background-color: #000;
-            padding: 10px 0;
-        }
-
-        #navbar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .nav-a {
-            color: white;
-            text-decoration: none;
-            padding: 0 20px;
-        }
-
-        #logo-holder img {
-            height: 50px;
-        }
-
-        #introduction-container {
-            text-align: center;
-            padding: 20vh 5%;
-        }
-
-        #intro-text {
-            font-size: 12vmin;
-            line-height: 1;
-        }
-
-        #intro-text a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #intro-text a:hover {
-            text-decoration: underline;
-        }
-
-        #scroll-to-see-more {
-            margin-top: 2vh;
-            font-size: 3vmin;
-        }
-
-        #scroll-to-see-more svg {
-            width: 24px;
-            height: 24px;
-        }
-
-        #about-container {
-            padding: 5% 5%;
-        }
-
-        #about-container h1 {
-            font-size: 6vmin;
-        }
-
-        #about-container p {
-            font-size: 3vmin;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 20px 5%;
-            text-align: center;
-            color: #fff;
-        }
-
-        .footer-sections {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .footer-section {
-            flex: 1;
-            padding: 0 20px;
-        }
-
-        .footer-section h3 {
-            margin-top: 0;
-        }
-
-        .footer-section a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-section p {
-            margin: 5px 0;
-        }
-
-        .footer-socials {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .footer-socials a img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .footer-bottom {
-            font-size: 0.8em;
-            margin-top: 20px;
-        }
-    </style>
+    <link href="./css/loader.css" rel="stylesheet" type="text/css" />
+    <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -148,6 +26,8 @@
                 <span>|</span>
                 <a href="branches.html" class="nav-a">Branches</a>
                 <span>|</span>
+               <!-- <a href="shop.html" class="nav-a">Shop</a> 
+                <span>|</span> -->
                 <a href="events.html" class="nav-a">Events</a>
                 <span>|</span>
                 <a href="contact.html" class="nav-a">Contact</a>
@@ -159,6 +39,7 @@
                 <a href="shop.html" class="underline-on-hover">Shop</a>
                 <a href="about.html" class="underline-on-hover">About</a>
                 <a onclick="switchStyle()"><img class="logo" src="./public/logodark.png"></a>
+
                 <a href="events.html" class="underline-on-hover">Events</a>
                 <a href="contact.html" class="underline-on-hover">Contact</a>
             </div>
@@ -166,12 +47,14 @@
 
 
         <section title="introduction" id="introduction-container">
-            <h1 id="intro-text" class="dark-grey-txt">Using chess to <a class="underline-on-hover dark-grey-txt fade-in-slowly" id="learn-more">make a difference.</a></h1>
+            <h1 id="intro-text" class="dark-grey-txt">Using chess to <a
+                    class="underline-on-hover dark-grey-txt fade-in-slowly" id="learn-more">make a difference.</a></h1>
 
             <div id="scroll-to-see-more" class="fade-in-slowly2">
                 <p>Scroll down to see more!</p>
                 &nbsp;&nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
@@ -179,54 +62,37 @@
 
         <section title="about" id="about-container" class="grey-txt">
             <div id="whoarewe">
-                <h1 class="underline-on-hover" style="font-size: 6vmin;">Who are we?</h1>
+                <h1 class=" underline-on-hover" style="font-size: 6vmin;">Who are we?</h1>
 
                 <p style="font-size: 3vmin;">The Student Led Chess Association, or SLCA, is a 501(c) nonprofit organization dedicated to helping the community through chess education. As a nationwide association of high school students, SLCA hosts numerous tournaments, chess camps, and other initiatives to give to the community, inspire change, and promote critical thinking skills. Our mission is simple: to improve the lives of young people through chess education.
-                    -run chess nonprofit organization.
+-run chess nonprofit organization.
 
                 </p>
             </div>
 
             <div id="whoarewe">
-                <h1 class="underline-on-hover" style="font-size: 6vmin;">But why?</h1>
+                <h1 class=" underline-on-hover" style="font-size: 6vmin;">But why?</h1>
 
-                <p style="font-size: 3vmin;">SLCA's mission is to promote chess and make a difference in communities. We offer a variety of chess programs and workshops at no cost. SLCA also hosts charity tournaments and helps teach unprivileged children. We run a high school league in several states and have 256 school branches
+                <p style="font-size: 3vmin;">SLCA's mission is to promote chess and make a difference in communities. We
+                    offer
+                    a variety of chess
+                    programs
+                    and
+                    workshops at no cost. SLCA also hosts charity tournaments and helps teach unprivileged children. We
+                    run a
+                    high
+                    school
+                    league in several states and have 256 school branches
                 </p>
             </div>
 
         </section>
 
         <footer>
-            <div class="footer-sections">
-                <div class="footer-section">
-                    <h3>Events</h3>
-                    <p><a href="#">Tournaments</a></p>
-                    <p><a href="#">CASTLE</a></p>
-                    <p><a href="#">EKG Chess</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Branches</h3>
-                    <p><a href="#">List All Branches</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <p><a href="#">Contact Form</a></p>
-                    <p><a href="#">Paypal</a></p>
-                </div>
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/studentledca/?hl=en"><img src="./public/igICON.png" alt="Instagram"></a>
-                <a href="https://twitter.com/studentledca"><img src="./public/twitterICON.png" alt="Twitter"></a>
-                <a href="https://www.youtube.com/@studentledca/shorts"><img src="./public/YTICON.png" alt="YouTube"></a>
-                <a href="https://www.linkedin.com/company/slca-north-america"><img src="./public/LinkedINICON.png" alt="LinkedIn"></a>
-                <a href="https://www.tiktok.com/@studentledca"><img src="./public/tiktokICON.png" alt="TikTok"></a>
-            </div>
-            <div class="footer-bottom">
-                <p>We are a 501(c)(3) organization. Donations are tax exemptable.</p>
-                <p>&copy; 2024 Student Led Chess Association. All Rights Reserved.</p>
-            </div>
+            We are a 501(c)(3) organization. Donations are tax exemptable.
         </footer>
     </div>
+
 
     <script src='loader.js'></script>
     <script src='darkvlight.js'></script>
