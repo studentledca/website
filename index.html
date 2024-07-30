@@ -9,6 +9,34 @@
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
     <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .impact-section {
+            margin: 20px;
+        }
+        .impact-section h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .impact-section p {
+            margin: 5px 0 0 0;
+        }
+        #impact-head{
+            text-align: center;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -50,6 +78,24 @@
             <h1 id="intro-text" class="dark-grey-txt">Using chess to <a
                     class="underline-on-hover dark-grey-txt fade-in-slowly" id="learn-more">make a difference.</a></h1>
 
+                    <section title="organization-in-numbers" id="organization-in-numbers-container">
+                        <h2 id="impact-head" class=" underline-on-hover" style="font-size: 6vmin;">Our Organization in Numbers</h2>
+                        <div class="container">
+                            <div class="impact-section" id="clubs">
+                                <h1 id="clubs-count"></h1>
+                                <p style="font-size: 3vmin;">Current clubs</p>
+                            </div>
+                            <div class="impact-section" id="schools">
+                                <h1 id="schools-count"></h1>
+                                <p style="font-size: 3vmin;">Schools reached</p>
+                            </div>
+                            <div class="impact-section" id="students">
+                                <h1 id="students-count"></h1>
+                                <p style="font-size: 3vmin;">Active members</p>
+                            </div>
+                        </div>
+                    </section>
+                    
             <div id="scroll-to-see-more" class="fade-in-slowly2">
                 <p>Scroll down to see more!</p>
                 &nbsp;&nbsp;
