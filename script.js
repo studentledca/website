@@ -180,3 +180,14 @@ document.onscroll = () => {
 };
 
 let elem = document.documentElement;
+
+//variables for impact sections
+
+const clubs = 50;
+const schools = 100;
+const people = 1500;
+
+//Setting the values to the HTML elements <- Recent add
+document.getElementById('clubs-count').innerText = clubs;
+document.getElementById('schools-count').innerText = schools;
+document.getElementById('people-count').innerText = people; 

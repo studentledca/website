@@ -14,3 +14,29 @@
     flex: 1;
     padding: 20px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.impact-section {
+    margin: 20px;
+}
+.impact-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.impact-section p {
+    margin: 5px 0 0 0;
+}
+#impact-head{
+    text-align: center;
+}
