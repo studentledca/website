@@ -19,7 +19,7 @@ function init() {
   
   const scene = new three.Scene();
   
-  // Setting up canvas element
+  // Setting up the canvas element
   const renderer = new three.WebGLRenderer({canvas: canvas});
   renderer.setSize(canvas.width, canvas.height);
   container.appendChild(renderer.domElement);
