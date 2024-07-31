@@ -9,9 +9,19 @@
     <title>SLCA</title>
     <link rel="icon" type="image/x-icon" href="/public/logolight.png">
     <link href="./css/loader.css" rel="stylesheet" type="text/css" />
-    <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css" />
-</head>
+    <link href="./css/darkstyle.css" id="pagestyle" rel="stylesheet" type="text/css"/>
+    <link href="./css/introduction.css" id="pagestyle" rel="stylesheet" type="text/css"/>
 
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.156.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.156.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+    
 <body>
     <div id='loader'>
         <p>loading index.html...</p>
@@ -47,8 +57,15 @@
         </nav>
 
         <header title="introduction" id="introduction-container">
-            <h1 id="intro-text" class="dark-grey-txt">Using chess to <a
-                    class="underline-on-hover dark-grey-txt fade-in-slowly" id="learn-more">make a difference.</a></h1>
+            <div id="chessboard-and-animated-text">
+                <div id="chessboard"></div>
+
+                <div id="animated-text">
+                    <h1 id="intro-text" class="dark-grey-txt">Using chess to 
+                        <a class="underline-on-hover dark-grey-txt fade-in-slowly" id="learn-more">make a difference.</a>
+                    </h1>
+                </div>
+            </div>
 
             <div id="scroll-to-see-more" class="fade-in-slowly2">
                 <p>Scroll down to see more!</p>
@@ -93,11 +110,11 @@
         </footer>
     </div>
 
-
     <script src='loader.js'></script>
     <script src='darkvlight.js'></script>
     <script src="random.min.js"></script>
     <script src="script.js"></script>
+    <script type="module" src="chessboard.js"></script>
 </body>
 
 </html>
