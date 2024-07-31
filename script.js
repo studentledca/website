@@ -15,7 +15,6 @@ function backspaceN(element, n, callback) {
             if (callback) callback();
         }
     }, 150);
-
 }
 
 function backspaceTillFinished(element, callback) {

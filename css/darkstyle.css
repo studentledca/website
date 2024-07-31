@@ -212,7 +212,7 @@ body {
 }
 
 #intro-text {
-  font-size: 13.4vmin;
+  font-size: 9vmin;
   margin-left: 0px;
   padding-left: 0px;
   line-height: 1.2em;
@@ -234,7 +234,7 @@ body {
   }
 
   #intro-text {
-    font-size: 11.4vmin;
+    font-size: 7.66vmin;
     margin-left: 0px;
     padding-left: 0px;
     line-height: 1.3em;
@@ -336,7 +336,7 @@ footer {
   }
 
   #navbar .nav-a {
-    font-size: 2.2vmin2;
+    font-size: 2.2vmin;
     padding-left: 3.0vmax;
     text-decoration: none;
   }
@@ -357,7 +357,7 @@ footer {
   }
 
   #intro-text {
-    font-size: 11.4vmin;
+    font-size: 7.66vmin;
     text-align: center;
     padding-bottom: 4vh;
   }
@@ -421,7 +421,7 @@ footer {
   }
 
   #intro-text {
-    font-size: 9.4vmin;
+    font-size: 7.66vmin;
     text-align: center;
     padding-bottom: 17vh;
     line-height: 1.5em;
