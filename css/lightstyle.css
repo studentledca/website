@@ -214,7 +214,7 @@ body {
 }
 
 #intro-text {
-  font-size: 9vmin;
+  font-size: 13.4vmin;
   margin-left: 0px;
   padding-left: 0px;
   line-height: 1.2em;
@@ -236,7 +236,7 @@ body {
   }
 
   #intro-text {
-    font-size: 7.66vmin;
+    font-size: 11.4vmin;
     margin-left: 0px;
     padding-left: 0px;
     line-height: 1.3em;
@@ -358,7 +358,7 @@ footer {
   }
 
   #intro-text {
-    font-size: 7.66vmin;
+    font-size: 11.4vmin;
     text-align: center;
     padding-bottom: 4vh;
   }
@@ -422,7 +422,7 @@ footer {
   }
 
   #intro-text {
-    font-size: 6.3vmin;
+    font-size: 9.4vmin;
     text-align: center;
     padding-bottom: 17vh;
     line-height: 1.5em;
