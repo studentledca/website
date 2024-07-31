@@ -19,7 +19,7 @@ function init() {
   
   const scene = new three.Scene();
   
-  // Setting up the canvas element
+  // Setting up canvas element
   const renderer = new three.WebGLRenderer({canvas: canvas});
   renderer.setSize(canvas.width, canvas.height);
   container.appendChild(renderer.domElement);
@@ -38,8 +38,8 @@ function init() {
   scene.add(bottom_light);
   
   const controls = new OrbitControls(camera, renderer.domElement);
+  // So that it zooms out very slowly
   controls.enableZoom = false;
-  controls.enablePan = false;
   
   // Load chessboard
   const loader = new GLTFLoader();
