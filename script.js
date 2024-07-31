@@ -15,7 +15,6 @@ function backspaceN(element, n, callback) {
             if (callback) callback();
         }
     }, 150);
-
 }
 
 function backspaceTillFinished(element, callback) {
@@ -166,14 +165,16 @@ function makeSticky() {
   }
 }
 
+// ... (previous code remains unchanged)
+
 setInterval(makeSticky, 15);*/
 
-// Variables for the impact sections <- Recent add
+// Variables for the impact sections
 const clubs = 50;
 const schools = 100;
 const people = 1500;
 
-// Setting the values to the HTML elements <- Recent add
+// Setting the values to the HTML elements
 document.getElementById('clubs-count').innerText = clubs;
 document.getElementById('schools-count').innerText = schools;
 document.getElementById('people-count').innerText = people;
