@@ -3,9 +3,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => setTimeout(init, 0.0));
+  document.addEventListener('DOMContentLoaded', () => setTimeout(init, 1.0));
 } else {
-  setTimeout(init, 0.0);
+  setTimeout(init, 1.0);
 }
 
 function init() {
