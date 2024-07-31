@@ -171,12 +171,12 @@ setInterval(makeSticky, 15);*/
 // Variables for the impact sections <- Recent add
 const clubs = 50;
 const schools = 100;
-const students = 1500;
+const people = 1500;
 
 // Setting the values to the HTML elements <- Recent add
 document.getElementById('clubs-count').innerText = clubs;
 document.getElementById('schools-count').innerText = schools;
-document.getElementById('students-count').innerText = students;
+document.getElementById('people-count').innerText = people;
 
 document.onscroll = () => {
     let op = window.getComputedStyle(document.getElementById('scroll-to-see-more')).getPropertyValue("opacity");
