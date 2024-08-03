@@ -255,34 +255,6 @@ a {
   }
 }
 
-.footer-container {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  background: linear-gradient(#5a5a5a, #000);
-}
-
-.footer-wrapper {
-  max-width: 900px;
-}
-
-.footer-h2 {
-  font-size: 1.3rem;
-  color: white;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-.footer-link {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: white;
-  display: flex;
-  transition: all 0.3s;
-}
-
-.footer-link:hover {
-  color: #a355ec;
-}
 
 
 footer {
