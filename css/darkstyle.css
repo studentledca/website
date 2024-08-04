@@ -263,6 +263,7 @@ a {
 
 .footer-wrapper {
   max-width: 900px;
+  margin: 0 auto; /* Center the footer wrapper */
 }
 
 .footer-h2 {
@@ -270,14 +271,21 @@ a {
   color: white;
   font-weight: 500;
   margin-bottom: 30px;
+  text-transform: none; /* Ensure text is not transformed */
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 10px; /* Space between links */
 }
 
 .footer-link {
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
-  display: flex;
   transition: all 0.3s;
+  text-transform: none; /* Ensure text is not transformed */
 }
 
 .footer-link:hover {
