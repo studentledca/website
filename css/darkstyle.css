@@ -271,13 +271,13 @@ a {
   color: white;
   font-weight: 500;
   margin-bottom: 30px;
-  text-transform: none; /* Ensure text is not transformed */
+  text-transform: none; 
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Stack links vertically */
-  gap: 10px; /* Space between links */
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-link {
