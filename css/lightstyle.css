@@ -282,9 +282,9 @@ a {
 
 
 .footer-container {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background: linear-gradient(#5a5a5a, #000);
+  padding-top: 0px;
+  padding-bottom: 50px;
+  background: linear-gradient(#1b1919, #000);
 }
 
 .footer-wrapper {
